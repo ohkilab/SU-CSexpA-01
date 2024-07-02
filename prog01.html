@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>科学科実験Iサンプルプログラム(JavaScript版)</title>
+        <meta charset="UTF-8">
 	<style>
 .item{
 	overflow:hidden;
@@ -27,7 +28,7 @@ body{
 	</style>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>
-	var Flickr_apikey = "XXXXXXXXXXXXXXX"; # API Key
+	var Flickr_apikey = "XXXXXXXXXXXXXXX"; // API Key
 	var Flickr_getRecent = "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=" + Flickr_apikey + "&extras=url_s&per_page=500&format=json&jsoncallback=?";
 	$.getJSON(Flickr_getRecent,
 		function(data){
